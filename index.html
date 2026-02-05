@@ -12,6 +12,15 @@
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script>
+    function anim_start(image_name) {
+      document.getElementById(image_name).style.opacity = "0";
+    }
+
+    function anim_stop(image_name) {
+      document.getElementById(image_name).style.opacity = "1";
+    }
+  </script>
 </head>
 
 <body>
@@ -88,21 +97,14 @@
             <tbody>
 
               <!-- Citizen Science -->
-              <tr onmouseout="wildrefq_stop()" onmouseover="wildrefq_start()">
+              <tr onmouseout="anim_stop('wildrefq_cover')" onmouseover="anim_start('wildrefq_cover')">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img id="wildrefq_anim" src='images/wildrefq/overview.png' width=100%>
                     <img id="wildrefq_cover" src='images/wildrefq/qualitative-results.png' width=100%>
                   </div>
                   <script type="text/javascript">
-                    function wildrefq_start() {
-                      document.getElementById('wildrefq_cover').style.opacity = "0";
-                    }
-
-                    function wildrefq_stop() {
-                      document.getElementById('wildrefq_cover').style.opacity = "1";
-                    }
-                    wildrefq_stop()
+                    anim_stop('wildrefq_cover')
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -137,21 +139,14 @@
               </tr>
 
               <!-- Proprioception -->
-              <tr onmouseout="borealtc_stop()" onmouseover="borealtc_start()">
+              <tr onmouseout="anim_stop('borealtc_cover')" onmouseover="anim_start('borealtc_cover')">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img id='borealtc_anim' src='images/borealtc/borealtc.gif' width=100%>
                     <img id='borealtc_cover' src='images/borealtc/husky-in-context.png' width=100%>
                   </div>
                   <script type="text/javascript">
-                    function borealtc_start() {
-                      document.getElementById('borealtc_cover').style.opacity = "0";
-                    }
-
-                    function borealtc_stop() {
-                      document.getElementById('borealtc_cover').style.opacity = "1";
-                    }
-                    borealtc_stop()
+                    anim_stop('borealtc_cover')
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -185,21 +180,14 @@
 
 
               <!-- Uncertainty -->
-              <tr onmouseout="rts_stop()" onmouseover="rts_start()">
+              <tr onmouseout="anim_stop('rts_cover')" onmouseover="anim_start('rts_cover')">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img id="rts_anim" src='images/rts/traj-mc-ptp.png' width=100%>
                     <img id="rts_cover" src='images/rts/intro_fig.jpeg' width=100%>
                   </div>
                   <script type="text/javascript">
-                    function rts_start() {
-                      document.getElementById('rts_cover').style.opacity = "0";
-                    }
-
-                    function rts_stop() {
-                      document.getElementById('rts_cover').style.opacity = "1";
-                    }
-                    rts_stop()
+                    anim_stop('rts_cover')
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -224,21 +212,14 @@
               </tr>
 
               <!-- WILN -->
-              <tr onmouseout="wiln_stop()" onmouseover="wiln_start()">
+              <tr onmouseout="anim_stop('wiln_cover')" onmouseover="anim_start('wiln_cover')">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img id="wiln_anim" src='images/wiln/wiln.gif' width=100%>
                     <img id="wiln_cover" src='images/wiln/wiln.jpg' width=100%>
                   </div>
                   <script type="text/javascript">
-                    function wiln_start() {
-                      document.getElementById('wiln_cover').style.opacity = "0";
-                    }
-
-                    function wiln_stop() {
-                      document.getElementById('wiln_cover').style.opacity = "1";
-                    }
-                    wiln_stop()
+                    anim_stop('wiln_cover')
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
